@@ -4,7 +4,7 @@
 body
 { 
 	background-color: black;
-	background-image: url(./img/PNG/background.png);
+	background-image: url(../img/PNG/background.png);
 	background-size: 100% 100%;
 	max-width: 1200px;
 	/*width:100%;
@@ -20,20 +20,21 @@ body
 
 /* Блок стилизации главного меню */
 .mm {
+	
 	height: auto;
-	border-radius: 5px;
-	background-color: lightgray;
+	
 	display: flex;
 	justify-content: center;	
 }
 
 .mm_block {
-		
+	border-radius: 5px;
+	background-color: lightgray;		
 }
 
 .mm_ul {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-direction: row;
 	list-style: none;
 	margin: 0px;
@@ -41,13 +42,15 @@ body
 }
 
 .mm_li {
-		
+
+	text-align: center;
 }
 
 .mm_a {
 	outline: none;
 	text-decoration: none;
 	text-align: center;
+	font-size: 1.2em;
 }
 
 
@@ -57,4 +60,29 @@ body
 }
 .p5 {
 	padding: 5px;
+}
+.ptb10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* adaptive start */
+@media screen and (min-width: 900px)  {
+
+}
+@media screen and (max-width: 515px)  {
+	
+	.mm_ul {
+		display: none;
+	}	
+
+	.mm_block {
+		width: 20px;
+		height: 20px;
+	}
+
+	.mm {
+		justify-content: right;
+	}
 }
