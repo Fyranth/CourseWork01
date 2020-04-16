@@ -16,6 +16,7 @@ body
 	margin: 0 auto;
 	font: 15px Arial, Helvetica, sans-serif;
 	color:  rgb(211,211,211);
+	z-index: 0;
 }
 
 div.header {
@@ -43,7 +44,7 @@ img.header {
 	float: left;
 	transform: translate(-50%,0);
 	width: 100%;
-	z-index: 10	
+	z-index: 4;	
 }
 
 .mm_block {
@@ -52,25 +53,42 @@ img.header {
 }
 
 .mm_ul {
-	clear: left;
+	display: flex;
 	position: relative;
-	right: 50%;
 	height: 40px;
-	float: right;
 	text-align: center;
-	
 	list-style: none;
-	padding: 0;
-	margin: 0
+	padding: 0px;
+	margin: 0px;
 }
 
 .mm_li {
 	position: relative;
+	width: 25%;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgb(211,211,211);
+}
+.mm_ul_child {
+	display: none;
+	text-align: center;
+	list-style: none;
+}
+.mm_li:hover > ul.mm_ul_child {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
 	left: 50%;
 	float: left;
 	height: 40px;
 	padding: 0;
 	margin: 0;
+	background-color: rgb(211,211,211);	
+}
+
+.mm_li_child {
+	width: 150px;
 	background-color: rgb(211,211,211);
 }
 
@@ -111,6 +129,15 @@ img.figure {
 	padding-bottom: 10px;
 }
 
+.buttons_socsety_mini {
+	display: none;
+}
+
+p.copyright {
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
 
 /* adaptive start */
 @media screen and (min-width: 515px)  {
@@ -118,14 +145,30 @@ img.figure {
 		display: none;
 	}
 }
+
 @media screen and (min-width: 515px) and (max-width: 831px) {
 	div.content_left, div.content_right, img.figure {
 		display: none;
 	}
 	div.content_body {
 		width:100%;
-
 	}
+	.buttons_socsety_mini {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 5px;
+	}
+
+	.buttons_socsety_mini_block {
+		width: 50%;
+		height: auto;
+		padding: 5px;
+		text-align: center;
+		border-radius: 10px;
+		border: 1px solid rgb(211,211,211);
+	}
+
 }
 @media screen and (max-width: 515px)  {
 	div.content_left, div.content_right, img.figure {
@@ -162,7 +205,7 @@ img.figure {
 		color: darkblue;
 	}
 
-	nav.mm_open:hover ~ ul.mm_ul {
+	nav.mm_open:hover ~ ul.mm_ul, nav.mm_open:active ~ ul.mm_ul {
 		position: absolute;
 		display: flex;
 		justify-content: right;
@@ -173,13 +216,15 @@ img.figure {
 		width: 150px;
 		margin-left: 0px;
 	}
+	
 	li.mm_li {
 		left: 0px;
-		
+		width: 150px;
+		z-index: 6;
 	}
 	a.mm_a {
 		border-bottom: 1px solid #666;
-
+		z-index: 7;
 	}
 
 
@@ -196,4 +241,21 @@ img.figure {
 		display:flex;
 		justify-content: right;
 	}
+
+	.buttons_socsety_mini {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 5px;
+	}
+
+	.buttons_socsety_mini_block {
+		width: 100%;
+		height: auto;
+		padding: 5px;
+		text-align: center;
+		border-radius: 10px;
+		border: 1px solid rgb(211,211,211);
+	}
+	
 }
