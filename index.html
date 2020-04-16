@@ -7,41 +7,42 @@
 		<title>Российские аванпосты 501-го и легиона Повстанцев | Russian outposts 501st and Rebel legion</title>
 		<link rel="stylesheet" type="text/css" href="./styles/greed.css">
 		<link rel="stylesheet" type="text/css" href="./styles/main.css">
-		<link rel="stylesheet" type="text/css" href="./styles/forms.css">
+		<link rel="stylesheet" type="text/css" href="./styles/blog.css">
 		<script src="./js/onclick.js"></script>
 	</head>
 	<body>
 		<div class="col-12">
+			<div class="row header">
+				<div class="col-8">
+					<img class="header" src="./img/PNG/main_logo.png">	
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-3">
+				<div class="col-2">
 					<div class="content_left">
 						<a href="http://501st.com" target="_blank"><img class="figure" src="./img/PNG/strormtrooper.png" title="Главный сайт 501st Legion">					</a>
-						<nav class="buttons_socsety" align="center">
+						<nav class="buttons_socsety">
 							<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
 							<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
 							<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
 						</nav>
 					</div>
 				</div>
-				<div class="col-6 content_body">
-					<div class="row header">
-						<img class="header" src="./img/PNG/main_logo.png">
-					</div>
+				<div class="col-8 content_body">
 					<nav class="row mm">
-						<nav class="mm_open" onclick="mm_open()">
+						<!--<nav class="mm_open">
 							<p class="mm_open p0 mauto">&equiv;</p>
-						</nav>
-						<ul class="mm_ul">
+						</nav>-->
+						<ul class="col-12 mm_ul">
 							<li class="mm_li">
 								<a href="./index.html" class="mm_a">Главная</a>
 							</li>
 							<li class="mm_li">
-								<a href="./about.html" class="mm_a">О легионе</a>
+								<a href="#" class="mm_a" >О легионе</a>
 								<ul class="mm_ul_child">
-									<li class="mm_li_child"><a href="" class="mm_a">О нас</a></li>
-									<li class="mm_li_child"><a href="" class="mm_a">Галерея</a></li>	
-									<li class="mm_li_child"><a href="" class="mm_a">Контакты</a></li>
-									<li class="mm_li_child"><a href="" class="mm_a">Задать вопрос</a></li>
+									<li class="mm_li_child"><a href="./about.html" class="mm_a">О нас</a></li>
+									<li class="mm_li_child"><a href="./gallery.html" class="mm_a">Галерея</a></li>	
+									<li class="mm_li_child"><a href="./contacts.html" class="mm_a">Контакты</a></li>
 									<li class="mm_li_child"><a href="http://501st.com" class="mm_a" target="_blank">501st Legion</a></li>
 									<li class="mm_li_child"><a href="http://rebellegion.com" class="mm_a" target="_blank">Rebel legion</a></li>	
 								</ul>
@@ -50,19 +51,78 @@
 								<a href="./forum.html" class="mm_a">Форум</a>
 							</li>
 							<li class="mm_li">
-								<a href="" class="mm_a">Связаться</a>
+								<a href="#contactus" class="mm_a">Связаться</a>
 							</li>
 						</ul>
 					</nav>
 					<div class="row content">
-						<div class="content_center">
-							<p class="content_text">501-ый Легион - это международная фанатская волонтерская организация. Мы воссоздаем максимально точные костюмы "злодеев и плохих парней" из фильмов, сериалов и комиксов франшизы Звездных Войн. Это штурмовики, Дарт Вейдер, имперские офицеры и т.д. Свои костюмы мы используем для благих целей - мы занимаемся благотворительностью и помогаем таким известным российским фондам, как "АдВита" и Подари Жизнь".</p>
-							<p class="content_text">Вместе с нами добрые дела совершают наши братья из Аванпоста Руусан Легиона Повстанцев. Это такая же фанатская волонтерская организация, но нацеленная на в оспроизведение костюмов положительных героев Звездных Войн - джедаи, контрабандисты, принцессы, сенаторы и т.д.</p>
-							<p class="content_text">Мы регулярно принимаем участие в различных мероприятиях в Москве и Петербурге. Мы работаем в сотрудничестве с Lucasfilm и Disney над тем, чтобы создавать доброе имя для Звездных Войн!</p>
-							<p class="content_text">Чтобы узнать больше о нас, вы можете посетить наш форум или наши странички в соцсетях.</p>
+						<div class="col-12 content_center">
+							<div class="row">
+								<div class="col-12 blogpost_container">
+									<div class="row">
+										<div class="col-12 blogpost_content_container">
+											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
+											<div class="col-9 blogpost_content">
+												<h3 class="blogpost_content">Happy new year!</h3>
+												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
+													Спасибо всем, кто верит в нас и посещает наш стенд на мероприятиях. Все вместе мы прожили еще один яркий, насыщенный год - несмотря на все трудности, он был полон приятных сюрпризов и значимых достижений.Так же хотим поблагодарить всех наших бойцов, саппортеров и друзей - каждый из вас вносит неоценимый вклад в наше общее дело!											
+													Желаем, чтобы с изменением даты на календаре все жизненные перемены были только к лучшему!
+													501-ый Легион поздравляет всех фанатов Звездных Войн с наступающим Новым 2020 годом! До скорой встречи в новом десятилетии!</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 blogpost_content_footer">
+											<p>Author: Admin. Date: 30th dec 2019</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 blogpost_container">
+									<div class="row">
+										<div class="col-12 blogpost_content_container">
+											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
+											<div class="col-9 blogpost_content">
+												<h3 class="blogpost_content">Happy new year!</h3>
+												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
+													Спасибо всем, кто верит в нас и посещает наш стенд на мероприятиях. Все вместе мы прожили еще один яркий, насыщенный год - несмотря на все трудности, он был полон приятных сюрпризов и значимых достижений.Так же хотим поблагодарить всех наших бойцов, саппортеров и друзей - каждый из вас вносит неоценимый вклад в наше общее дело!											
+													Желаем, чтобы с изменением даты на календаре все жизненные перемены были только к лучшему!
+													501-ый Легион поздравляет всех фанатов Звездных Войн с наступающим Новым 2020 годом! До скорой встречи в новом десятилетии!</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 blogpost_content_footer">
+											<p>Author: Admin. Date: 30th dec 2019</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 blogpost_container">
+									<div class="row">
+										<div class="col-12 blogpost_content_container">
+											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
+											<div class="col-9 blogpost_content">
+												<h3 class="blogpost_content">Happy new year!</h3>
+												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
+													Спасибо всем, кто верит в нас и посещает наш стенд на мероприятиях. Все вместе мы прожили еще один яркий, насыщенный год - несмотря на все трудности, он был полон приятных сюрпризов и значимых достижений.Так же хотим поблагодарить всех наших бойцов, саппортеров и друзей - каждый из вас вносит неоценимый вклад в наше общее дело!											
+													Желаем, чтобы с изменением даты на календаре все жизненные перемены были только к лучшему!
+													501-ый Легион поздравляет всех фанатов Звездных Войн с наступающим Новым 2020 годом! До скорой встречи в новом десятилетии!</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 blogpost_content_footer">
+											<p>Author: Admin. Date: 30th dec 2019</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row footer">
+					<div class="row">
 						<div class="buttons_socsety_mini">
 							<div class="buttons_socsety_mini_block">
 								<p>501st Russian outpost</p>
@@ -78,22 +138,37 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-2">
 					<div class="content_right">
 						<a href="http://rebellegion.com" target="_blank" >
 							<img class="figure" src="./img/PNG/rebel_pilot.png" title="Главный сайт Rebel Legion">
 						</a>
-						<div class="buttons_socsety" align="center">
+						<nav class="buttons_socsety">
 							<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
 							<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
-						</div>
+						</nav>
 					</div>
 				</div>	
 			</div>
-			<div class="row">
+			<div class="row footer">
 				<p class="copyright">
 					The 501st Legion and Rebel Legion are worldwide Star Wars costuming organizations comprised of and operated by Star Wars fans. While not sponsored by Lucasfilm Ltd., they are Lucasfilm's preferred costuming groups. Star Wars, its characters, costumes, and all associated items are the intellectual property of Lucasfilm. © & ™ Lucasfilm Ltd. All rights reserved. Used under authorization.
 				</p>
+			</div>
+		</div>
+
+		<div class="contactus" id="contactus">
+			<div class="form_contact">
+				<form class="form_contact">
+					<fieldset >
+						<legend>Задайте вопрос</legend>
+						<label for="form_name" class="text_input">Ваше имя</label><input class="text_input" name="form_name" type="text" placeholder="Как к Вам обращаться?" required>
+						<label for="form_email" class="text_input">Ваш email</label><input class="text_input" name="form_email" type="email" placeholder="Обратный адрес" required>
+						<label for="form_phone" class="text_input">Ваш телефон</label><input class="text_input" name="form_phone" type="tel" placeholder="Номер телефона">
+						<label for="form_text" class="text_input">Обращение</label><textarea class="text_input" name="form_text" placeholder="Задайте свой вопрос" required></textarea>
+						<nav class="flex_row_evenly ptb10"><button type="submit" title="Отправить сообщение">Отправить</button><button type="button" title="Закрыть форму" onclick="window.open('#','_parent');">Закрыть</button></nav>
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</body>
