@@ -61,6 +61,7 @@ img.header {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
+	/*z-index:10;*/
 }
 
 .mm_li {
@@ -70,12 +71,15 @@ img.header {
 	padding: 0px;
 	margin: 0px;
 	background-color: rgb(211,211,211);
+	border-bottom: 1px solid black;
+	/*z-index:10;*/
 }
 .mm_ul_child {
 	display: none;
 	text-align: center;
 	list-style: none;
 	width: 100%;
+	/*z-index:10;*/
 }
 .mm_li:hover > ul.mm_ul_child {
 	display: flex;
@@ -87,14 +91,22 @@ img.header {
 	padding: 0;
 	margin: 0;
 	background-color: rgb(211,211,211);
-	list-style: none;	
+	list-style: none;
+	/*z-index:5;	*/
 }
 
 .mm_li_child {
 	/*width: 150px;*/
 	Width:100%;
 	background-color: rgb(211,211,211);
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	/*z-index:10;*/
 }
+
+/*.mm_li:hover ul.mm_ul_child {
+	z-index:10;
+}*/
 
 .mm_a {
 	position: relative;
@@ -104,6 +116,7 @@ img.header {
 	text-decoration: none;
 	padding: 0 20px;
 	line-height: 40px;
+	z-index:10;
 }
 
 /* блок стилей контента (текст)*/
@@ -371,7 +384,8 @@ button {
 		padding: 0;
 		margin: 0;
 		background-color: rgb(211,211,211);
-		list-style: none;	
+		list-style: none;
+		/*z-index:5;	*/
 	}
 	
 	div.contactus {
@@ -390,5 +404,9 @@ button {
 
     div.contactus:target > div.form_contact  {
         width: 100%;
-    }
+	}
+	
+	div.blogpost_content {
+		width: 100%;
+	}
 }
