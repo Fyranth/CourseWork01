@@ -1,29 +1,34 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="501st russia, 501st.ru, 501st russian outpost, 501й Россия, 501й легион, 501й, штурмовик, штурмовик россия, штурмовики россия, stormtrooper, stormtroopers, stormtroopers russia, rebellegion russia, russian outpost, ruusan outpost, повстанцы россия, повстанцы, star wars косплей, star wars, звездные войны">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/ico/favicon-32x32.png">
 		<title>Российские аванпосты 501-го и легиона Повстанцев | Russian outposts 501st and Rebel legion</title>
 		<link rel="stylesheet" type="text/css" href="./styles/greed.css">
 		<link rel="stylesheet" type="text/css" href="./styles/main.css">
-		<link rel="stylesheet" type="text/css" href="./styles/forms.css">
 		<link rel="stylesheet" type="text/css" href="./styles/blog.css">
 		<link rel="stylesheet" type="text/css" href="./styles/about.css">
+		<link rel="stylesheet" type="text/css" href="./styles/animation.css">
 		<script src="./js/onclick.js"></script>
-		</head>
-	<body>
+		<script src="./js/animation.js"></script>
+	</head>
+	<body onload="SetAnimationOnLoad();">
 		<div class="col-12">
 			<div class="row header">
-				<div class="col-8">
+				<div class="offset-2 col-8">
 					<img class="header" src="./img/PNG/main_logo.png">	
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-2">
 					<div class="content_left">
-						<a href="http://501st.com" target="_blank"><img class="figure" src="./img/PNG/strormtrooper.png" title="Главный сайт 501st Legion">					</a>
-						<nav class="buttons_socsety" align="center">
+						<a href="http://501st.com" target="_blank" class="figure-link">
+							<img class="figure  opacity_blink" src="./img/PNG/strormtrooper.png" title="Главный сайт 501st Legion">
+						</a>
+						<nav class="buttons_socsety">
 							<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
 							<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
 							<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
@@ -59,35 +64,52 @@
 					</nav>
 					<div class="row content">
 						<div class="col-12 content_center">
-							<img src="./img/jpg/header.jpg" class="col-12 img_about">
+							<img src="./img/jpg/501stLegion.jpg" class="col-12 img_about">
 							<p class="content_text">501-ый Легион - это международная фанатская волонтерская организация. Мы воссоздаем максимально точные костюмы "злодеев и плохих парней" из фильмов, сериалов и комиксов франшизы Звездных Войн. Это штурмовики, Дарт Вейдер, имперские офицеры и т.д. Свои костюмы мы используем для благих целей - мы занимаемся благотворительностью и помогаем таким известным российским фондам, как "АдВита" и Подари Жизнь".</p>
 							<p class="content_text">Вместе с нами добрые дела совершают наши братья из Аванпоста Руусан Легиона Повстанцев. Это такая же фанатская волонтерская организация, но нацеленная на в оспроизведение костюмов положительных героев Звездных Войн - джедаи, контрабандисты, принцессы, сенаторы и т.д.</p>
 							<p class="content_text">Мы регулярно принимаем участие в различных мероприятиях в Москве и Петербурге. Мы работаем в сотрудничестве с Lucasfilm и Disney над тем, чтобы создавать доброе имя для Звездных Войн!</p>
 							<p class="content_text">Чтобы узнать больше о нас, вы можете посетить наш форум или наши странички в соцсетях.</p>
 						</div>
 					</div>
+					<div class="row content">
+						<div class="col-12 content_center">
+							<img src="./img/jpg/rebellegion.jpg" class="col-12 img_about">
+							<p class="content_text">Легион Повстанцев – добровольная фанатская организация, созданная для объединения сил всех поклонников, обладающих аутентичными костюмами положительных героев вселенной “Звездных Войн”. Легион ставит перед собой три глобальные задачи:</p>
+							<ul class="content">
+								<li>Популяризация “Звездных Войн”.</li>
+								<li>Содействие созданию костюмов.</li>
+								<li>Благотворительность.</li>
+							</ul>
+							<p class="content_text">Легион, основанный в 2000 году, насчитывает в своих рядах более двух тысяч активных участников по всему миру и тесно сотрудничает с 501-ым Легионом.</p>
+							<p class="content_text">Мы являемся исключительно добровольно-волонтерской организацией и не пытаемся делать деньги на наших костюмах.</p>
+						</div>
+					</div>
 					<div class="row footer">
 						<div class="buttons_socsety_mini">
 							<div class="buttons_socsety_mini_block">
 								<p>501st Russian outpost</p>
-								<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
-								<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
-								<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
+								<nav class="buttons_socsety_mini_links">
+									<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
+									<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
+									<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
+								</nav>
 							</div>
 							<div class="buttons_socsety_mini_block">
 								<p>Rebel legion Ruusan outpost</p>
-								<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
-								<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
+								<nav class="buttons_socsety_mini_links">
+									<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
+									<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
+								</nav>
 							</div>	
 						</div>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="content_right">
-						<a href="http://rebellegion.com" target="_blank" >
-							<img class="figure" src="./img/PNG/rebel_pilot.png" title="Главный сайт Rebel Legion">
+						<a href="http://rebellegion.com" target="_blank" class="figure-link">
+							<img class="figure  opacity_blink" src="./img/PNG/rebel_pilot.png" title="Главный сайт Rebel Legion">
 						</a>
-						<div class="buttons_socsety" align="center">
+						<div class="buttons_socsety">
 							<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
 							<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
 						</div>

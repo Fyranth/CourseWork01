@@ -1,26 +1,33 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr">
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="501st russia, 501st.ru, 501st russian outpost, 501й Россия, 501й легион, 501й, штурмовик, штурмовик россия, штурмовики россия, stormtrooper, stormtroopers, stormtroopers russia, rebellegion russia, russian outpost, ruusan outpost, повстанцы россия, повстанцы, star wars косплей, star wars, звездные войны">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/ico/favicon-32x32.png">
 		<title>Российские аванпосты 501-го и легиона Повстанцев | Russian outposts 501st and Rebel legion</title>
 		<link rel="stylesheet" type="text/css" href="./styles/greed.css">
 		<link rel="stylesheet" type="text/css" href="./styles/main.css">
 		<link rel="stylesheet" type="text/css" href="./styles/blog.css">
+		<link rel="stylesheet" type="text/css" href="./styles/animation.css">
 		<script src="./js/onclick.js"></script>
+		<script src="./js/animation.js"></script>
 	</head>
-	<body>
+	<body onload="SetAnimationOnLoad();">
+
 		<div class="col-12">
 			<div class="row header">
-				<div class="col-8">
+				<div class="offset-2 col-8">
 					<img class="header" src="./img/PNG/main_logo.png">	
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-2">
 					<div class="content_left">
-						<a href="http://501st.com" target="_blank"><img class="figure" src="./img/PNG/strormtrooper.png" title="Главный сайт 501st Legion">					</a>
+						<a href="http://501st.com" target="_blank" class="figure-link">
+							<img class="figure  opacity_blink" src="./img/PNG/strormtrooper.png" title="Главный сайт 501st Legion">
+						</a>
 						<nav class="buttons_socsety">
 							<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
 							<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
@@ -29,31 +36,30 @@
 					</div>
 				</div>
 				<div class="col-8 content_body">
-					<nav class="row mm">
-						<!--<nav class="mm_open">
-							<p class="mm_open p0 mauto">&equiv;</p>
-						</nav>-->
-						<ul class="col-12 mm_ul">
-							<li class="mm_li">
-								<a href="./index.html" class="mm_a">Главная</a>
-							</li>
-							<li class="mm_li">
-								<a href="#" class="mm_a">О легионе</a>
-								<ul class="mm_ul_child">
-									<li class="mm_li_child"><a href="./about.html" class="mm_a">О нас</a></li>
-									<li class="mm_li_child"><a href="./contacts.html" class="mm_a">Контакты</a></li>
-									<li class="mm_li_child"><a href="http://501st.ru/forum/" class="mm_a" target="_blank">Форум</a></li>	
-									<li class="mm_li_child"><a href="http://501st.com" class="mm_a" target="_blank">501st Legion</a></li>
-									<li class="mm_li_child"><a href="http://rebellegion.com" class="mm_a" target="_blank">Rebel legion</a></li>	
-								</ul>
-							</li>
-							<li class="mm_li">
-								<a href="./gallery.html" class="mm_a">Галерея</a>
-							</li>
-							<li class="mm_li">
-								<a href="#contactus" class="mm_a">Связаться</a>
-							</li>
-						</ul>
+					<nav class="row ">
+						<nav class="col-12 mm">
+							<ul class="col-12 mm_ul">
+								<li class="mm_li">
+									<a href="./index.html" class="mm_a">Главная</a>
+								</li>
+								<li class="mm_li">
+									<a href="#" class="mm_a">О легионе</a>
+									<ul class="mm_ul_child">
+										<li class="mm_li_child"><a href="./about.html" class="mm_a">О нас</a></li>
+										<li class="mm_li_child"><a href="./contacts.html" class="mm_a">Контакты</a></li>
+										<li class="mm_li_child"><a href="http://501st.ru/forum/" class="mm_a" target="_blank">Форум</a></li>	
+										<li class="mm_li_child"><a href="http://501st.com" class="mm_a" target="_blank">501st Legion</a></li>
+										<li class="mm_li_child"><a href="http://rebellegion.com" class="mm_a" target="_blank">Rebel legion</a></li>	
+									</ul>
+								</li>
+								<li class="mm_li">
+									<a href="./gallery.html" class="mm_a">Галерея</a>
+								</li>
+								<li class="mm_li">
+									<a href="#contactus" class="mm_a">Связаться</a>
+								</li>
+							</ul>
+						</nav>
 					</nav>
 					<div class="row content">
 						<div class="col-12 content_center">
@@ -61,7 +67,7 @@
 								<div class="col-12 blogpost_container">
 									<div class="row">
 										<div class="col-12 blogpost_content_container">
-											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
+											<img class="col-3 blogpost_img" src="./img/jpg/new_year.jpg">
 											<div class="col-9 blogpost_content">
 												<h3 class="blogpost_content">Happy new year!</h3>
 												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
@@ -84,11 +90,9 @@
 										<div class="col-12 blogpost_content_container">
 											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
 											<div class="col-9 blogpost_content">
-												<h3 class="blogpost_content">Happy new year!</h3>
-												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
-													Спасибо всем, кто верит в нас и посещает наш стенд на мероприятиях. Все вместе мы прожили еще один яркий, насыщенный год - несмотря на все трудности, он был полон приятных сюрпризов и значимых достижений.Так же хотим поблагодарить всех наших бойцов, саппортеров и друзей - каждый из вас вносит неоценимый вклад в наше общее дело!											
-													Желаем, чтобы с изменением даты на календаре все жизненные перемены были только к лучшему!
-													501-ый Легион поздравляет всех фанатов Звездных Войн с наступающим Новым 2020 годом! До скорой встречи в новом десятилетии!</p>
+												<h3 class="blogpost_content">Something!</h3>
+												<p class="blogpost_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate orci eu mauris dictum laoreet. Maecenas feugiat elit id lectus imperdiet, tempus cursus orci dignissim. Aenean ullamcorper urna sed est interdum egestas. Quisque sed tellus quis lacus suscipit luctus sed in dolor. Nullam congue, tortor eu maximus hendrerit, velit risus interdum dui, a auctor turpis neque vitae nisl. Sed mollis purus gravida justo consequat, placerat sodales tortor gravida. Proin fringilla, turpis nec lobortis sodales, ante justo ultrices nibh, non commodo ex lectus vitae nibh. Nam neque elit, volutpat ut dui sit amet, aliquam facilisis leo. Quisque molestie venenatis urna vel vulputate. In neque orci, elementum et ultrices sit amet, aliquet at nibh. Vestibulum tincidunt mi et ornare consequat. Quisque tincidunt non erat posuere malesuada. Etiam dolor ex, viverra id imperdiet in, lobortis sed nunc. Phasellus imperdiet orci id suscipit semper. Donec tellus mi, elementum sit amet rutrum sit amet, lacinia ac odio. Vivamus elit nibh, efficitur sed euismod sed, tincidunt ac ligula.</p>
+												<p class="blogpost_content">Suspendisse potenti. Sed fringilla egestas mollis. Nullam sed finibus urna. Sed efficitur sapien velit, vitae semper felis scelerisque et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a ipsum magna. Nam sit amet malesuada dui. Maecenas sed pulvinar ante, ac convallis turpis.</p>
 											</div>
 										</div>
 									</div>
@@ -105,11 +109,9 @@
 										<div class="col-12 blogpost_content_container">
 											<img class="col-3 blogpost_img" src="./img/jpg/emblem.jpg">
 											<div class="col-9 blogpost_content">
-												<h3 class="blogpost_content">Happy new year!</h3>
-												<p class="blogpost_content">Уже завтра все мысли будут о подготовке к празднику, поэтому самое время подвести небольшие итоги года ✨
-													Спасибо всем, кто верит в нас и посещает наш стенд на мероприятиях. Все вместе мы прожили еще один яркий, насыщенный год - несмотря на все трудности, он был полон приятных сюрпризов и значимых достижений.Так же хотим поблагодарить всех наших бойцов, саппортеров и друзей - каждый из вас вносит неоценимый вклад в наше общее дело!											
-													Желаем, чтобы с изменением даты на календаре все жизненные перемены были только к лучшему!
-													501-ый Легион поздравляет всех фанатов Звездных Войн с наступающим Новым 2020 годом! До скорой встречи в новом десятилетии!</p>
+												<h3 class="blogpost_content">far far away in another galaxy</h3>
+												<p class="blogpost_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate orci eu mauris dictum laoreet. Maecenas feugiat elit id lectus imperdiet, tempus cursus orci dignissim. Aenean ullamcorper urna sed est interdum egestas. Quisque sed tellus quis lacus suscipit luctus sed in dolor. Nullam congue, tortor eu maximus hendrerit, velit risus interdum dui, a auctor turpis neque vitae nisl. Sed mollis purus gravida justo consequat, placerat sodales tortor gravida. Proin fringilla, turpis nec lobortis sodales, ante justo ultrices nibh, non commodo ex lectus vitae nibh. Nam neque elit, volutpat ut dui sit amet, aliquam facilisis leo. Quisque molestie venenatis urna vel vulputate. In neque orci, elementum et ultrices sit amet, aliquet at nibh. Vestibulum tincidunt mi et ornare consequat. Quisque tincidunt non erat posuere malesuada. Etiam dolor ex, viverra id imperdiet in, lobortis sed nunc. Phasellus imperdiet orci id suscipit semper. Donec tellus mi, elementum sit amet rutrum sit amet, lacinia ac odio. Vivamus elit nibh, efficitur sed euismod sed, tincidunt ac ligula.</p>
+												<p class="blogpost_content">Suspendisse potenti. Sed fringilla egestas mollis. Nullam sed finibus urna. Sed efficitur sapien velit, vitae semper felis scelerisque et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a ipsum magna. Nam sit amet malesuada dui. Maecenas sed pulvinar ante, ac convallis turpis.</p>
 											</div>
 										</div>
 									</div>
@@ -126,22 +128,26 @@
 						<div class="buttons_socsety_mini">
 							<div class="buttons_socsety_mini_block">
 								<p>501st Russian outpost</p>
-								<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
-								<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
-								<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
+								<nav class="buttons_socsety_mini_links">
+									<a href="http://vk.com/vadersfist_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="501st Russian outpost в vk.com"></a>
+									<a href="http://www.facebook.com/RussianOutpost" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="501st Russian outpost в facebook.com"></a>
+									<a href="http://instagram.com/501st_russia" target="_blank"><img class="buttons_socsety" src="./img/PNG/inst_button.png" title="501st Russian outpost в instagram.com"></a>
+								</nav>
 							</div>
 							<div class="buttons_socsety_mini_block">
 								<p>Rebel legion Ruusan outpost</p>
-								<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
-								<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
+								<nav class="buttons_socsety_mini_links">
+									<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
+									<a href="http://www.facebook.com/TheRebelLegionRussia" target="_blank"><img class="buttons_socsety" src="./img/PNG/facebook_button.png" title="Rebel legion Ruusan outpost в facebook.com"></a>
+								</nav>
 							</div>	
 						</div>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="content_right">
-						<a href="http://rebellegion.com" target="_blank" >
-							<img class="figure" src="./img/PNG/rebel_pilot.png" title="Главный сайт Rebel Legion">
+						<a href="http://rebellegion.com" target="_blank" class="figure-link">
+							<img class="figure  opacity_blink" src="./img/PNG/rebel_pilot.png" title="Главный сайт Rebel Legion">
 						</a>
 						<nav class="buttons_socsety">
 							<a href="http://vk.com/rebellegion_public" target="_blank"><img class="buttons_socsety" src="./img/PNG/vk_button.png" title="Rebel legion Ruusan outpost в vk.com"></a>
